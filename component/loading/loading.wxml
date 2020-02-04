@@ -1,0 +1,7 @@
+<!--component/loading/loading.wxml-->
+<view class="loading">
+  <view wx:if="{{visibility}}" class="loadingWrap">
+    <!-- <text>waiting……</text> -->
+    <image class="loadingImg" src="../../assets/img/loading.gif"></image>
+  </view>
+</view>

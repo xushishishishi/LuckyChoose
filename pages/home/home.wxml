@@ -1,0 +1,10 @@
+<!--pages/home/home.wxml-->
+<view>
+  <view class="body">
+    <view class="functionWrap" bindtap="luckyChoose">Lucky Choose</view>
+    <view class="functionWrap" bindtap="aaSystem">AA制</view>
+    <view class="functionWrap" bindtap="shoppingAmount">Which Cheaper？</view>
+  </view>
+  <footer></footer>
+  <!-- <loading></loading> -->
+</view>

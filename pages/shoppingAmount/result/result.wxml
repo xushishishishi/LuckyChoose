@@ -1,0 +1,15 @@
+<view class="body">
+  <text class="resultTitle">性价比最高的方案是：</text>
+  <view class="resultLine">
+    <text class="label">物品金额：</text>
+    <text class="value">{{caseObj.consume}}</text>
+  </view>
+  <view class="resultLine">
+    <text class="label">物品数量：</text>
+    <text class="value">{{caseObj.num}}</text>
+  </view>
+  <view class="resultLine">
+    <text class="label">单价：</text>
+    <text class="value">{{caseObj.unitPrice}}</text>
+  </view>
+</view>

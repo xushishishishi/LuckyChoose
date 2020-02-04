@@ -1,0 +1,14 @@
+<!--component/footer/footer.wxml-->
+<view class="footerWrap">
+  <view class="footer">
+    <view class="footerBody" bindtap="routerToHome">
+      <icon class="iconfont icon-svg-"></icon>
+      Home</view>
+  </view>
+  <view class="footer">
+    <view class="footerBody">
+      <icon class="iconfont icon-wode"></icon>
+      Mine
+    </view>
+  </view>
+</view>

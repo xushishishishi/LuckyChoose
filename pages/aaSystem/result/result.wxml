@@ -1,0 +1,5 @@
+<!--pages/aaSystem/result/result.wxml-->
+<view class="body">
+  <text>人均消费是：</text>
+  <view class="resultWrap">{{result}}</view>
+</view>

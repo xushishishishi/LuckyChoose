@@ -1,0 +1,10 @@
+<!--component/info/info.wxml-->
+<view class="info" wx:if="{{visibility}}">
+  <view class="infoContent">
+    <icon class="iconfont icon-close info-close" bindtap="cancel"></icon>
+    <view class="content">
+      <icon class="iconfont icon-wenti"></icon>
+      <view class="contentWord">{{content}}</view>
+    </view>
+  </view>
+</view>

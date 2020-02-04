@@ -1,0 +1,28 @@
+/* pages/shoppingAmount/content/content.wxss */
+
+.caseBottom {
+  line-height: 30px;
+  margin-top: 8px;
+}
+
+.priceWrap {
+  float: left;
+  font-size: 14px;
+  color: rgb(238, 99, 99);
+  font-weight: bold;
+}
+
+.btnWrap {
+  background-color: rgb(255, 245, 238);
+  width: 120px;
+  text-align: center;
+  border-radius: 8px;
+  float: right;
+}
+
+.shoppingAmountContent {
+  box-shadow: 2px 2px 5px rgb(255, 193, 193);
+  padding: 10px 5px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}

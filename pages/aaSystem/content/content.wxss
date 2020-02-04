@@ -1,0 +1,5 @@
+/* pages/aaSystem/content/content.wxss */
+
+.form-label {
+  min-width: 70px;
+}

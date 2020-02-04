@@ -1,0 +1,23 @@
+/* pages/shoppingAmount/result/result.wxss */
+
+.resultTitle {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.resultLine {
+  line-height: 40px;
+  padding: 0 10px;
+  color: rgb(39, 64, 139);
+}
+
+.label {
+  min-width: 100px;
+  display: inline-block;
+  text-align: right;
+  font-size: 14px;
+}
+
+.value {
+  font-weight: bold;
+}

@@ -1,0 +1,25 @@
+/* pages/home/home.wxss */
+
+.body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 16px 20px;
+}
+
+.functionWrap {
+  width: 125px;
+  height: 100px;
+  background-color: rgb(255, 240, 245);
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border: 2px solid rgb(255, 182, 193);
+  margin-bottom: 16px;
+  justify-content: center;
+}
+
+.functionWrap:hover {
+  box-shadow: 0px 0px 5px rgb(255, 106, 106);
+}

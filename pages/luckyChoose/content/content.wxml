@@ -1,0 +1,21 @@
+<!--pages/loveChoose/loveChoose.wxml-->
+<view>
+  <view class="body">
+    <text>请输入选项：</text>
+    <form bindsubmit="formSubmit" class="form">
+      <view class="form-wrap" wx:for="{{optionsList}}" wx:key="index">
+        <label class="form-label">选项{{index + 1}}：</label>
+        <input name="option{{index + 1}}" value="{{item.name}}" class="form-input" placeholder="请输入选项{{index + 1}}" data-index="{{index}}" bindinput="bindInput"></input>
+        <icon wx:if="{{optionsList.length-1 === index}}" class="iconfont icon-tubiaozhizuomoban form-icon" bindtap="addOption"></icon>
+        <icon wx:elif="{{optionsList.length-2 >= index}}" class="iconfont icon-tubiaozhizuomoban1 form-icon" bindtap="reduceOption" data-index="{{index}}"></icon>
+      </view>
+      <view class="buttonWrap">
+        <button form-type="submit" class="buttonSubmit">
+          <icon class="iconfont icon-release"></icon>
+          开启选择</button>
+      </view>
+    </form>
+  </view>
+  <info visibility="{{isShow}}" content="{{content}}"></info>
+  <loading visibility="{{loading}}"></loading>
+</view>

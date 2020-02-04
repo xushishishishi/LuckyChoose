@@ -1,0 +1,51 @@
+/* component/info/info.wxss */
+@import '../../assets/iconfont/iconfont.wxss';
+
+.info {
+  background-color: rgba(253, 245, 230, 0.5);
+  z-index: 5;
+  height: 100%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+}
+
+.infoContent {
+  box-sizing: border-box;
+  width: 80%;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20%;
+  border-radius: 8px;
+  z-index: 5;
+  padding: 16px;
+}
+
+.iconWrap, .contentWord {
+  float: left;
+}
+
+.iconWrap {
+  width: 15%;
+}
+
+.contentWord {
+  margin-top: 3px;
+  width: 85%;
+}
+
+.icon-wenti {
+  float: left;
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.info-close {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  font-size: 20px;
+}

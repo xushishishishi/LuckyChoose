@@ -1,0 +1,41 @@
+<!--pages/shoppingAmount/content/content.wxml-->
+<view>
+  <view class="body">
+    <form bindsubmit="formSubmit" class="form">
+      <view class="shoppingAmountContent clearFloat" wx:for="{{caseList}}" wx:key="index">
+        <view>方案{{index + 1}}：</view>
+        <view class="form-wrap">
+          <label class="form-label">物品金额：</label>
+          <input type="digit" class="form-input" placeholder="请输入物品金额" name="consume{{index+1}}" value="{{item.consume}}" data-item="consume" data-index="{{index}}" bindinput="bindInput" bindblur="getPrice"></input>
+          <view wx:if="{{isNumber}}" class="text-danger">请输入数字</view>
+        </view>
+
+        <view class="form-wrap">
+          <label class="form-label">物品数量：</label>
+          <input type="digit" class="form-input" placeholder="请输入物品数量" name="num{{index+1}}" value="{{item.num}}" data-item="num" data-index="{{index}}" bindinput="bindInput" bindblur="getPrice"></input>
+        </view>
+
+        <view class="buttonWrap">
+          <button form-type="submit" class="buttonSubmit">
+            <icon class="iconfont icon-release"></icon>
+            获取方案</button>
+        </view>
+
+        <view class="caseBottom">
+          <view class="priceWrap" wx:if="{{item.unitPrice}}">单价：{{item.unitPrice}}</view>
+          <view class="btnWrap" bindtap="addCase" wx:if="{{caseList.length-1 === index}}" data-index="{{index}}">
+            <icon class="iconfont icon-jiahao"></icon>
+            新增方案
+          </view>
+
+          <view class="btnWrap" bindtap="reduceCase" wx:elif="{{caseList.length-2 >= index}}" data-index="{{index}}">
+            <icon class="iconfont icon-jianhao"></icon>
+            移除方案
+          </view>
+        </view>
+      </view>
+    </form>
+  </view>
+  <info visibility="{{isShow}}" content="{{content}}"></info>
+  <loading visibility="{{loading}}"></loading>
+</view>

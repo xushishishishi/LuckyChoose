@@ -1,0 +1,25 @@
+<!--pages/aaSystem/content/content.wxml-->
+<view>
+  <view class="body">
+    <form bindsubmit="formSubmit" class="form">
+      <view class="form-wrap">
+        <label class="form-label">消费金额：</label>
+        <input type="digit" name="consume" class="form-input" placeholder="请输入消费金额"></input>
+        <view wx:if="{{isNumber}}" class="text-danger">请输入数字</view>
+      </view>
+
+      <view class="form-wrap">
+        <label class="form-label">消费人数：</label>
+        <input type="number" name="figures" class="form-input" placeholder="请输入消费人数"></input>
+      </view>
+
+      <view class="buttonWrap">
+        <button form-type="submit" class="buttonSubmit">
+          <icon class="iconfont icon-release"></icon>
+          计算</button>
+      </view>
+    </form>
+  </view>
+  <info visibility="{{isShow}}" content="{{content}}"></info>
+  <loading visibility="{{loading}}"></loading>
+</view>

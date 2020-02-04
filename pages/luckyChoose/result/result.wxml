@@ -1,0 +1,4 @@
+<view class="body">
+  <text>系统随机选择的是：</text>
+  <view class="resultWrap">{{result}}</view>
+</view>
