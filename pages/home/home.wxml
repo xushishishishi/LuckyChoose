@@ -5,6 +5,7 @@
     <view class="functionWrap" bindtap="aaSystem">AA制</view>
     <view class="functionWrap" bindtap="shoppingAmount">Which Cheaper？</view>
   </view>
+  <image class="backgroundImg" src="../../assets/img/star-right.gif"></image>
   <footer></footer>
   <!-- <loading></loading> -->
 </view>

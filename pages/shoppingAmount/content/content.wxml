@@ -25,12 +25,12 @@
           <view class="priceWrap" wx:if="{{item.unitPrice}}">单价：{{item.unitPrice}}</view>
           <view class="btnWrap" bindtap="addCase" wx:if="{{caseList.length-1 === index}}" data-index="{{index}}">
             <icon class="iconfont icon-jiahao"></icon>
-            新增方案
+            新增
           </view>
 
-          <view class="btnWrap" bindtap="reduceCase" wx:elif="{{caseList.length-2 >= index}}" data-index="{{index}}">
+          <view class="btnWrap" bindtap="reduceCase" wx:if="{{caseList.length-1 >= index && caseList.length !=1}}" data-index="{{index}}">
             <icon class="iconfont icon-jianhao"></icon>
-            移除方案
+            移除
           </view>
         </view>
       </view>
